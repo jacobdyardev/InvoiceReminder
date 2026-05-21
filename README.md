@@ -1,16 +1,54 @@
-# invoice_reminder
+# Invoice Reminder
 
-A new Flutter project.
+Invoice Reminder is a Flutter-based invoice tracking and payment reminder application designed for freelancers, contractors, and small businesses.
 
-## Getting Started
+The application helps users track unpaid invoices, manage payment history, and receive automated reminders so payments do not get overlooked.
 
-This project is a starting point for a Flutter application.
+## Features
 
-A few resources to get you started if this is your first Flutter project:
+- Create and manage invoices
+- Track paid and unpaid invoices
+- Payment history and invoice notes
+- Due today, upcoming, and overdue filtering
+- Local notification reminders
+- Daily scheduling and reminder pipeline
+- One-time Pro upgrade support
+- Offline-first design
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Technical Highlights
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Built with Flutter/Dart
+- Local persistence using SharedPreferences
+- Alarm and background scheduling architecture
+- Notification scheduling and reconciliation system
+- In-app purchase integration
+- Debug and observability tooling
+
+## Architecture
+
+The reminder system follows a deterministic pipeline approach:
+
+```text
+Invoice Data
+    ↓
+Daily Reconciliation
+    ↓
+Reminder Scheduling
+    ↓
+Notification Generation
+    ↓
+User Delivery
+```
+
+## Installation
+
+```bash
+git clone https://github.com/JacobDyarDev/InvoiceReminder.git
+cd InvoiceReminder
+flutter pub get
+flutter run
+```
+
+## Status
+
+Published mobile application with active development and ongoing improvements.
